@@ -8,12 +8,12 @@ namespace Seeker.Core
         public override void InitState(GameController gc)
         {
             base.InitState(gc);
-            //gc.LoseView.HideView();
+            gc.LoseView.ShowView();
         }
 
         public override void DestroyState()
         {
-            //gc.LoseView.ShowView();
+            gc.LoseView.HideView();
         }
 
         public override void FixedUpdateState()

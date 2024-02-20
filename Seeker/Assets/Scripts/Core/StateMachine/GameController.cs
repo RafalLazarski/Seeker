@@ -1,11 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Seeker.UI;
 
 namespace Seeker.Core
 {
     public class GameController : MonoBehaviour
     {
+        [SerializeField]
+        private MainView mainView;
+        public MainView MainView => mainView;
+
+        [SerializeField]
+        private GameView gameView;
+        public GameView GameView => gameView;
+
+        [SerializeField]
+        private PauseView pauseView;
+        public PauseView PauseView => pauseView;
+
+        [SerializeField]
+        private LoseView loseView;
+        public LoseView LoseView => loseView;
+
         private BaseState currentState;
 
         private void Start()

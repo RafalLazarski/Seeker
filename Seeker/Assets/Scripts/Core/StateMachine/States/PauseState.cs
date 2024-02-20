@@ -7,11 +7,11 @@ namespace Seeker.Core
         public override void InitState(GameController gc)
         {
             base.InitState(gc);
-            //gc.PauseView.ShowView();
+            gc.PauseView.ShowView();
         }
         public override void DestroyState()
         {
-            //gc.PauseView.HideView();
+            gc.PauseView.HideView();
         }
 
         public override void FixedUpdateState()

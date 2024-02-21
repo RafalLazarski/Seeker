@@ -23,10 +23,15 @@ namespace Seeker.Core
         private LoseView loseView;
         public LoseView LoseView => loseView;
 
+        [SerializeField]
+        private UIController uiController;
+        public UIController UIController => uiController;
+
         private BaseState currentState;
 
         private void Start()
         {
+            UIController.InitController(this);
             ChangeState(new MainState());
         }
 
@@ -51,6 +56,6 @@ namespace Seeker.Core
             currentState?.DestroyState();
             currentState = newState;
             currentState?.InitState(this);
-        }
+        }        
     }
 }

@@ -24,5 +24,10 @@ namespace Seeker.Core
         {
 
         }
+
+        public void StartGame()
+        {
+            gc.ChangeState(new GameState());
+        }
     }
 }

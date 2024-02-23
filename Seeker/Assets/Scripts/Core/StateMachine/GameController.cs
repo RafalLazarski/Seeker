@@ -32,7 +32,7 @@ namespace Seeker.Core
         private void Start()
         {
             UIController.InitController(this);
-            ChangeState(new MainState());
+            ChangeState(new GameStartState());
         }
 
         private void Update()

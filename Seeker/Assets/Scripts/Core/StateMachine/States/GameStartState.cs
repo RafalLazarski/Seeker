@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Seeker.Core
 {
-    public class MainState : BaseState
+    public class GameStartState : BaseState
     {
         public override void InitState(GameController gc)
         {

@@ -9,6 +9,7 @@ namespace Seeker.Core
         public virtual void InitState(GameController gc)
         {
             this.gc = gc;
+            Time.timeScale = 0f;
         }
         public abstract void UpdateState();
         public abstract void FixedUpdateState();

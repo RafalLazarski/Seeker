@@ -9,6 +9,7 @@ namespace Seeker.Core
         {
             base.InitState(gc);
             gc.GameView.ShowView();
+            Time.timeScale = 1.0f;
         }
         public override void DestroyState()
         {
